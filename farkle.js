@@ -91,7 +91,10 @@ Player.prototype.finishTurn = function(){
     this.points += this.currentTurn;
     this.currentTurn = 0;
     if(this.points >= 10000){
-      return this.name+ " Wins!";
+      $('h1').text(this.name+ " Wins!");
+      $('#designer').text("Refresh Browser to Play Again");
+      $('#gameScreen').addClass('hide');
+
     } 
   }
   return true;
@@ -119,7 +122,7 @@ $(document).ready(function(){
  var farkle = new Game();
  
  var playerCount;
- $('#gameScreen').hide();
+ 
 
  $('#enterPlayer').on('click', function(){
   if(!(farkle.playerArr.length)){
@@ -133,7 +136,7 @@ $(document).ready(function(){
 
  $('#startButton').on('click', function(){
    $('#startScreen').slideUp();
-   $('#gameScreen').slideDown();
+   $('#gameScreen').removeClass('hidden').slideDown();
    $('#currentPlayer').text(farkle.playerArr[turnTracker].name + "'s Turn");
    $('#currentPlayerPoints').text(farkle.playerArr[turnTracker].points)
    playerCount = farkle.playerArr.length;

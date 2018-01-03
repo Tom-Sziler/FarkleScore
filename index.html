@@ -9,7 +9,7 @@
     	<div id='main'>
     		<div id='headers'>
               <h1>Farkle Scorekeeper</h1>
-              <h4> Designed by Tom </h4>
+              <h4 id="designer"> Designed by Tom </h4>
     		</div>
             <div id='startScreen'>
                 <div id="nameInput">
@@ -17,7 +17,7 @@
                   <button class="btn btn-warning" id="startButton">Start Game</button>
                 </div>
             </div>
-    		<div class="edge" id="gameScreen">
+    		<div class="edge hidden" id="gameScreen">
     			<h4 id="currentPlayer">Player's Turn</h4>
                 <div class="pointsDisplay">
                     <ul>
@@ -31,6 +31,7 @@
                          <ul id="points">
                             <li id="one"><button class="btn btn-warning">One</button></li>
                             <li id="five"><button class="btn btn-warning">Five</button></li>
+                            <li id="fourAndTwo"><button class="btn btn-warning">Four and Two</button></li>
                             <li id="threeOnes"><button class="btn btn-warning">Three Ones</button></li>
                             <li id="threeTwos"><button class="btn btn-warning">Three Twos</button></li>
                             <li id="threeThrees"><button class="btn btn-warning">Three Threes</button></li>
@@ -39,11 +40,10 @@
                             <li id="threeSixes"><button class="btn btn-warning">Three Sixes</button></li>
                             <li id="threePairs"><button class="btn btn-warning">Three Pairs</button></li>
                             <li id="twoTriplets"><button class="btn btn-warning">Two Triplets</button></li>
+                            <li id="straight"><button class="btn btn-warning">1-6 Straight</button></li>
                             <li id="fourKind"><button class="btn btn-warning">Four of a Kind</button></li>
                             <li id="fiveKind"><button class="btn btn-warning">Five of a Kind</button></li>
                             <li id="sixKind"><button class="btn btn-warning">Six of a Kind</button></li>
-                            <li id="fourAndTwo"><button class="btn btn-warning">Four and Two</button></li>
-                            <li id="straight"><button class="btn btn-warning">1-6 Straight</button></li>
                         </ul>
                     </div>
                     <div id="turnModifier">

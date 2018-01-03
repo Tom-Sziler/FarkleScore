@@ -3,20 +3,20 @@
 	font-family: "Arial";
 	color: black;
 	background-color: #f7f7f7;
-	max-width: 500px;
+	max-width: 1000px;
 	min-width: 500px;
 	margin: 0px auto;
+	border: 1px solid black;
 }
 
 #headers {
 	background-color:lightgray;
 	padding: 10px 0px 10px 0px;
-	border: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 #startScreen {
 	height: 150px;
-	border:2px solid red;
 }
 
 #nameInput {
@@ -52,6 +52,8 @@ ul {
 
 .scoreButtons {
 	padding-right: 40px;
+	max-width: 500px;
+	margin: 0px auto;
 }
 
 #points li {
@@ -67,7 +69,7 @@ ul {
 }
 
 .edge {
-	border: 2px solid green;
+
 	margin: 0px auto;
 }
 
@@ -81,13 +83,26 @@ ul {
 }
 
 .pList ul {
-	border:2px solid red;
+	
 	padding-right: 40px;
 	font-size: 20px;
+
 }
 
 #pListHeading {
 	font-size: 30px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+    padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.hidden {
+	display: none;
+}
+
+.hide {
+	display: hidden;
 }
 
 
