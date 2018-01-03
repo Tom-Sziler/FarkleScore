@@ -1,92 +1,94 @@
 #body {
-	border: 2px dashed red;
 	text-align: center;
-	font-family: "verdana";
-	color: orange;
-	background-color: darkblue;
+	font-family: "Arial";
+	color: black;
+	background-color: #f7f7f7;
+	max-width: 500px;
+	min-width: 500px;
+	margin: 0px auto;
+}
 
+#headers {
+	background-color:lightgray;
+	padding: 10px 0px 10px 0px;
+	border: 1px solid black;
 }
 
 #startScreen {
-	border: 3px solid yellow;
-	height: 500px;
+	height: 150px;
+	border:2px solid red;
 }
 
-#menuList {
-	border:2px solid green;
-    list-style: none;
-    text-align: center;
-    margin: 0px auto;
+#nameInput {
+	margin-top: 50px;
+	height: 40px;
+}
 
+#playerNameInput {
+	height: 30px;
+	border-radius: 3px;
+	color: black;
+	margin-right:5px;
+}
 
+#currentPlayer {
+	font-size: 35px;
+}
+
+.pointsDisplay {
+	display: inline-block;
+	text-align: right;
+}
+
+.pointsDisplay ul {
+	display: inline-block;
+	text-align: center;
+	padding-right: 40px;
 }
 
 ul {
 	list-style: none;
 }
 
-#startButton {
-	border: 2px solid brown;
-	width: 200px;
-	text-align: center;
-	padding: 15px;
-	margin: 20px auto;
-	border-radius: 10px;
-	color: black;
-	background-color: orange;
-	box-shadow: 3px 3px 5px black;
-	text-shadow: 1px 1px 2px grey;
-	font-size: 15px;
-	cursor:pointer;
-	
-
+.scoreButtons {
+	padding-right: 40px;
 }
 
-.button:hover {
-	text-decoration: underline;
-    
+#points li {
+	display: inline;
 }
 
-.button:active {
-	background-color: darkorange;
+#turnModifier{
+	margin-top: 30px;
+}
 
+#turnButtons li {
+	display: inline;
 }
 
 .edge {
-	border: 2px solid pink;
+	border: 2px solid green;
 	margin: 0px auto;
-	height: 500px;
 }
 
-
-
-.pointButton {
-	border: 2px solid black;
-	width: 175px;
-	height: 50px;
-	border-radius: 5px;
-    background-color: orange;
-    color: black;
-   padding-top: 13px;
-   margin: 5px;
+.btn {
+	width: 110px;
 }
 
-
-
-
-.turn {
-	display: inline-block;
-	border: 2px solid black;
-	width: 125px;
-	height: 40px;
-	color: black;
-	background-color: orange;
-	margin-top: 30px;
-	border-radius: 5px;
-	padding-top: 7px;
+#points .btn {
+	width: 110px;
+	margin-top: 5px;
 }
 
+.pList ul {
+	border:2px solid red;
+	padding-right: 40px;
+	font-size: 20px;
+}
 
+#pListHeading {
+	font-size: 30px;
+}
 
 
 

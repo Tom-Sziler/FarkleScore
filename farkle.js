@@ -67,7 +67,6 @@ Player.prototype.twoTriplets = function(){
   this.currentRoll += 2500;
 };
 
-
 Player.prototype.fourAndTwo = function(){
   this.currentRoll += 1500;
 };
@@ -123,6 +122,9 @@ $(document).ready(function(){
  $('#gameScreen').hide();
 
  $('#enterPlayer').on('click', function(){
+  if(!(farkle.playerArr.length)){
+    $('.pList').append('<h4 id="pListHeading">-Players-</h4><ul id="playerList"></ul>')
+  }
   farkle.addPlayer($('#playerNameInput').val());
   var num = farkle.playerArr.length-1;
   $('#playerList').append('<li>' + farkle.playerArr[num].name + ": " + '<span>' + farkle.playerArr[num].points+ '</span>' + '</li>');
@@ -130,8 +132,8 @@ $(document).ready(function(){
  });
 
  $('#startButton').on('click', function(){
-   $('#startScreen').hide();
-   $('#gameScreen').show();
+   $('#startScreen').slideUp();
+   $('#gameScreen').slideDown();
    $('#currentPlayer').text(farkle.playerArr[turnTracker].name + "'s Turn");
    $('#currentPlayerPoints').text(farkle.playerArr[turnTracker].points)
    playerCount = farkle.playerArr.length;
