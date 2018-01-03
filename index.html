@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Farkle Scorekeeper</title>
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    </head>
+    <body id="body">
+    	<div id='main'>
+    		<div id='headers'>
+              <h1>Farkle Scorekeeper</h1>
+              <h4> Designed by Tom </h4>
+    		</div>
+            <div id='startScreen' class="col-lg-6">
+                <span>Enter Player: </span><input id="playerNameInput" type="text" placeholder="Enter New Player"><button id="enterPlayer">Enter</button>
+                <ul id="menuList">
+                    <li class="button" id="startButton">Start Game</li>
+                </ul>
+            </div>
+    		<div class="col-lg-6 edge" id="gameScreen">
+    			<h4 id="currentPlayer">Player's Turn</h4>
+                <div class="pointsDisplay">
+                    <ul>
+                        <li><span> Total Points: </span> <span id='currentPlayerPoints'> 0 </span></li>
+                        <li><span> Current Turn: </span> <span id='currentTurnPoints'> 0 </span></li>
+                        <li><span> Current Roll: </span> <span id='currentRollPoints'> 0 </span></li>
+                    </ul>
+                </div>
+                <div class="scoreButtons">
+                    <div class="col-md-4">
+                        <ul>
+                            <li class="pointButton button" id="one">One</li>
+                            <li class="pointButton button" id="five">Five</li>
+                            <li class="pointButton button" id="threeOnes">Three Ones</li>
+                            <li class="pointButton button" id="threeTwos">Three Twos</li>
+                            <li class="pointButton button" id="threeThrees">Three Threes</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                         <ul>
+                            <li class="pointButton button" id="threeFours">Three Fours</li>
+                            <li class="pointButton button" id="threeFives">Three Fives</li>
+                            <li class="pointButton button" id="threeSixes">Three Sixes</li>
+                            <li class="pointButton button" id="threePairs">Three Pairs</li>
+                            <li class="pointButton button" id="twoTriplets">Two Triplets</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                         <ul>
+                            <li class="pointButton button" id="fourKind">Four of a kind</li>
+                            <li class="pointButton button" id="fiveKind">Five of a kind</li>
+                            <li class="pointButton button" id="sixKind">Six of a kind</li>
+                            <li class="pointButton button" id="fourAndTwo">Four and Two</li>
+                            <li class="pointButton button" id="straight">1-6 Straight</li>
+                        </ul>
+                    </div>
+                    <div id="turnModifier">
+                        <ul id="turnButtons">
+                          <li class="turn button" id='rollAgain'> Roll Again </li>
+                          <li class="turn button" id='endTurn'> End Turn </li>
+                          <li class="turn button" id='farkle'> Farkle! </li>
+                        </ul>
+                    </div>
+                </div>
+    		</div>
+    		<div class="col-lg-6 edge">
+    			<h4> Players</h4>
+                <ul id="playerList">
+                    
+
+                </ul>
+    		</div>
+        </div>
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <script src="farkle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+#body {
+	border: 2px dashed red;
+	text-align: center;
+	font-family: "verdana";
+	color: orange;
+	background-color: darkblue;
+
+}
+
+#startScreen {
+	border: 3px solid yellow;
+	height: 500px;
+}
+
+#menuList {
+	border:2px solid green;
+    list-style: none;
+    text-align: center;
+    margin: 0px auto;
+
+
+}
+
+ul {
+	list-style: none;
+}
+
+#startButton {
+	border: 2px solid brown;
+	width: 200px;
+	text-align: center;
+	padding: 15px;
+	margin: 20px auto;
+	border-radius: 10px;
+	color: black;
+	background-color: orange;
+	box-shadow: 3px 3px 5px black;
+	text-shadow: 1px 1px 2px grey;
+	font-size: 15px;
+	cursor:pointer;
+	
+
+}
+
+.button:hover {
+	text-decoration: underline;
+    
+}
+
+.button:active {
+	background-color: darkorange;
+
+}
+
+.edge {
+	border: 2px solid pink;
+	margin: 0px auto;
+	height: 500px;
+}
+
+
+
+.pointButton {
+	border: 2px solid black;
+	width: 175px;
+	height: 50px;
+	border-radius: 5px;
+    background-color: orange;
+    color: black;
+   padding-top: 13px;
+   margin: 5px;
+}
+
+
+
+
+.turn {
+	display: inline-block;
+	border: 2px solid black;
+	width: 125px;
+	height: 40px;
+	color: black;
+	background-color: orange;
+	margin-top: 30px;
+	border-radius: 5px;
+	padding-top: 7px;
+}
+
+
+
+
+
+
+
+
