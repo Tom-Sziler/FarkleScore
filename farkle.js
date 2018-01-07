@@ -100,6 +100,10 @@ Player.prototype.finishTurn = function(){
   return true;
 };
 
+Player.prototype.clear = function(){
+  this.currentRoll = 0;
+}
+
 Player.prototype.farkle = function(){
   this.currentTurn = 0;
   this.currentRoll = 0;
@@ -245,6 +249,7 @@ $('#endTurn').on('click', function(){
     $('#playerList li:nth-child('+ (turnTracker+1) +')').text(farkle.playerArr[turnTracker].name+ ": " + farkle.playerArr[turnTracker].points);
     advanceTurn(playerCount);
     $('#currentPlayer').text(farkle.playerArr[turnTracker].name + "'s Turn");
+    $('#currentPlayerPoints').text(farkle.playerArr[turnTracker].points);
     $('#currentRollPoints').text(farkle.playerArr[turnTracker].currentRoll);
     $('#currentTurnPoints').text(farkle.playerArr[turnTracker].currentTurn);
   } else {
@@ -259,10 +264,15 @@ $('#farkle').on('click', function(){
   $('#currentTurnPoints').text(farkle.playerArr[turnTracker].currentTurn);
   advanceTurn(playerCount);
   $('#currentPlayer').text(farkle.playerArr[turnTracker].name + "'s Turn");
+  $('#currentPlayerPoints').text(farkle.playerArr[turnTracker].points);
 });
 
 
-
+$('#clear').on('click', function(){
+  farkle.playerArr[turnTracker].clear();
+  $('#currentRollPoints').text(0);
+  
+});
 
 
 });

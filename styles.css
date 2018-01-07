@@ -25,10 +25,13 @@
 }
 
 #playerNameInput {
+	text-align: center;
+	display: block;
 	height: 30px;
 	border-radius: 3px;
 	color: black;
-	margin-right:5px;
+	margin:0px auto;
+	margin-bottom: 10px
 }
 
 #currentPlayer {
@@ -81,6 +84,8 @@ ul {
 	width: 110px;
 	margin-top: 5px;
 }
+
+
 
 .pList ul {
 	
